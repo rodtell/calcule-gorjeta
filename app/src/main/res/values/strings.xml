@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calcule Gorjeta</string>
+    <string name="icone_dinheiro">Ícone dinheiro</string>
+    <string name="plus_or_minus_icon">Ícone mais ou menos</string>
+    <string name="total_por_pessoa">Total por pessoa</string>
+    <string name="valor_da_conta">Valor da conta</string>
+    <string name="dividir">Dividir entre</string>
+    <string name="gorjeta">Gorjeta</string>
+    <string name="botao_limpar">Limpar</string>
+</resources>
