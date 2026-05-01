@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcule Gorjeta</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Script para ícones -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="top-header">
+        <p>Total por pessoa</p>
+        <h1 id="totalPerPersonDisplay">$0.00</h1>
+      </header>
+
+      <main class="bill-form">
+        <div class="input-group">
+          <label for="totalBill">Valor da conta</label>
+          <div class="input-with-icon">
+            <i data-lucide="dollar-sign"></i>
+            <input
+              type="number"
+              id="totalBill"
+              placeholder="0.00"
+              step="0.01"
+            />
+          </div>
+        </div>
+
+        <div id="dynamicContent" class="hidden">
+          <div class="row">
+            <span>Dividir</span>
+            <div class="counter">
+              <button type="button" id="btnMinus" class="round-btn">
+                <i data-lucide="minus"></i>
+              </button>
+              <span id="splitByDisplay">1</span>
+              <button type="button" id="btnPlus" class="round-btn">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="row">
+            <span>Gorjeta</span>
+            <span id="tipAmountDisplay">$ 0.00</span>
+          </div>
+
+          <div class="slider-container">
+            <span id="tipPercentageDisplay">0%</span>
+            <input type="range" id="tipSlider" min="0" max="100" value="0" />
+          </div>
+
+          <button id="btnClear" class="clear-btn">Limpar</button>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
